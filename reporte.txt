@@ -1,0 +1,21 @@
+=====================================================
+REPORTE DE ANÁLISIS DE LOGS - HONEYPOT COWRIE
+=====================================================
+
+Total de conexiones registradas: 105
+
+TOP 5 IPs ATACANTES:
+--------------------
+- 101.126.135.131 (26 intentos)
+- 180.184.86.178 (14 intentos)
+- 178.62.249.28 (9 intentos)
+- 209.97.178.192 (7 intentos)
+- 159.89.207.135 (7 intentos)
+
+TOP 5 CONTRASEÑAS PROBADAS:
+---------------------------
+- admin (6 veces)
+- 1234 (3 veces)
+- 123456 (3 veces)
+- None (2 veces)
+- root (2 veces)
