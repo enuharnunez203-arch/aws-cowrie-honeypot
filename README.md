@@ -16,12 +16,3 @@ Para garantizar que los atacantes interactuaran con la trampa y no con el servid
 2. **Desactivación de Sockets:** Deshabilitación de `ssh.socket` en Ubuntu para forzar la lectura del archivo `sshd_config`.
 3. **Port Forwarding (Docker):** Redirección de todo el tráfico malicioso que llega al puerto `22` (AWS Security Groups) hacia el puerto `2222` interno del contenedor de Cowrie.
 
-## Comandos de Despliegue
-Implementación del Honeypot mediante Docker:
-```bash
-# Actualización e instalación de dependencias
-sudo apt update && sudo apt install -y docker.io
-sudo systemctl enable --now docker
-
-# Ejecución del contenedor aislando el tráfico
-sudo docker run -d -p 22:2222 --name honeypot-cowrie --restart=always cowrie/cowrie
